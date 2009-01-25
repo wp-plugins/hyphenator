@@ -1,5 +1,5 @@
 # HYPHENATOR WP-PLUGIN
-# Copyright (C) 2008 Benedict Blümel
+# Copyright (C) 2008 Benedict B.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
