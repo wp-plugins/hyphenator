@@ -1,10 +1,10 @@
 === Hyphenator ===
 Contributors: e2b
-Donate link:
+Donate link: http://www.bebl.eu/zeug/hyphenator
 Tags: hyphenator, hyphenation, hyphenate, hypen, softhyphen, pattern, JavaScript, HTML, XHTML, shy, Silbentrennung, Worttrennung, Trennmuster
 Requires at least: 2.6
 Tested up to: 2.7.1
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 
 Soft hyphen are automatically added in the content for nicer automatic word wrap. Particularly suitable for justification. Uses Hyphenator.js.
 
@@ -42,6 +42,13 @@ Visit the [project homepage](http://code.google.com/p/hyphenator/ "hyphenator - 
 1. settings backend (in English)
 
 
+== Frequently Asked Questions ==
+
+= Why shows my WordPress no update to 1.0.0.1? =
+* **Reason:** I have relaunched the version numeration for Hyphenator version 1.0.0 so that it answers to the new version of the Hyphenator.js project. The downside is people using the previous version won't be notified due to the new versions 1.0.0 and 1.0.0.1. Sorry, I fizzled it.
+* **Solution:** Try to install the new version manually. Maybe you have to delete the existing installation of Hyphenator first. An other option is to go to 'Edit' in 'Plugins' in Wordpress, select 'Hyphenator' and alter the version number into a minor one, 0.1 should work. Save and then WordPress will show you an Update for 'Hyphenator' you can install. Done.
+
+
 == Example ==
 You can see a working example [here](http://hyphenator.googlecode.com/svn/trunk/WorkingExample.html "Example of using Hyphenator.js").
 
@@ -55,6 +62,8 @@ You can see a working example [here](http://hyphenator.googlecode.com/svn/trunk/
 * 0.1.1 (23.12.2008) - updated to Hyphenator.js v11 (beta)
 * 0.1.2 (12.01.2009) - updated to Hyphenator.js v12 (beta)
 * 1.0.0 (24.02.2009) - updated to Hyphenator.js 1.0.0, new version numbers and new backend
+* 1.0.0.1 (25.02.2009) - fatal bug fixed
+* 1.0.1 (03.03.2009) - updated to Hyphenator.js 1.0.1
 
 
 == License ==
