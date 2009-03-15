@@ -67,7 +67,7 @@ function hyphenator_header() {
 
 	$hyphenatorHead .= "\n\t<script type=\"text/javascript\">";
 	if ($hyphenator_minwordlenght != '') {
-		$hyphenatorHead .= "\n\t\tHyphenator.config({minwordlegth: {$hyphenator_minwordlenght}});";
+		$hyphenatorHead .= "\n\t\t// bug: Hyphenator.config({minwordlegth: {$hyphenator_minwordlenght}});";
 	}
 	if ($hyphenator_hypenchar === '1') {
 		$hyphenatorHead .= "\n\t\tHyphenator.config({hyphenchar: '-'});";
