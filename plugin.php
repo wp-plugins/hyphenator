@@ -1,9 +1,9 @@
 <?php
 /*
 Plugin Name: Hyphenator
-Version: 1.0.1
+Version: 2.0.0.1
 Plugin URI: http://www.bebl.eu/zeug/hyphenator
-Description: Soft hyphen are automatically added in the content for nicer automatic word wrap. Particularly suitable for justification. Uses <a href="http://code.google.com/p/hyphenator/">Hyphenator.js</a> 1.0.1.
+Description: Soft hyphen are automatically added in the content for nicer automatic word wrap. Particularly suitable for justification. Uses <a href="http://code.google.com/p/hyphenator/">Hyphenator.js</a> 2.0.0.
 Author: Benedict B.
 Author URI: http://www.bebl.eu/
 */
@@ -67,21 +67,13 @@ function hyphenator_header() {
 
 	$hyphenatorHead .= "\n\t<script type=\"text/javascript\">";
 	if ($hyphenator_minwordlenght != '') {
-		$hyphenatorHead .= "\n\t\tHyphenator.config({minwordlegth: {$hyphenator_minwordlenght}});";
+		$hyphenatorHead .= "\n\t\tHyphenator.config({minwordlength: {$hyphenator_minwordlenght}});";
 	}
 	if ($hyphenator_hypenchar === '1') {
 		$hyphenatorHead .= "\n\t\tHyphenator.config({hyphenchar: '-'});";
 	}
 	if ($hyphenator_addexceptions != '') {
-		if ($hyphenator_languages != "auto") {
-			foreach ($hyphenator_languages as $hyphenator_languages_lang) {
-				$hyphenatorHead .= "\n\t\tHyphenator.addExceptions('{$hyphenator_languages_lang}', '{$hyphenator_addexceptions}');";
-			}
-		} else {
-			foreach (array("en", "de", "fr", "es", "it", "nl", "fi", "sv", "pl", "ru", "bn", "ka", "ml", "gu", "hi", "or", "pa", "ta", "te") as $hyphenator_languages_lang) {
-				$hyphenatorHead .= "\n\t\tHyphenator.addExceptions('{$hyphenator_languages_lang}', '{$hyphenator_addexceptions}');";
-			}
-		}
+		$hyphenatorHead .= "\n\t\tHyphenator.addExceptions('', '{$hyphenator_addexceptions}');";
 	}
 	if ($hyphenator_classname != '') {
 		$hyphenatorHead .= "\n\t\tHyphenator.config({classname: '{$hyphenator_classname}'});";
